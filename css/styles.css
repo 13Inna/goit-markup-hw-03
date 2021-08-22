@@ -127,6 +127,10 @@ body {
   padding: 10px 32px;
   border-radius: 4px;
 }
+.padding-button {
+  display: inline-block;
+  padding: 350px 0px 200px 700px;
+}
 /*---------------main--------------------*/
 .main-feature-title {
   font-weight: bold;
