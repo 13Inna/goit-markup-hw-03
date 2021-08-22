@@ -35,7 +35,7 @@ body {
 }
 .pre-button:hover,
 .pre-button:focus {
-  color: var(--accent-background-color-button);
+  background-color: var(--accent-background-color-button);
   cursor: pointer;
 }
 .pre-nav:hover,
@@ -44,16 +44,30 @@ body {
 }
 
 /*-------------header-----------*/
-.header {
-  width: 1600px;
-  height: 80px;
+.header .container {
+  display: flex;
+}
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+}
+.header-contakt {
+  display: flex;
+  margin-left: auto;
 }
 .header-logo {
+  display: inline-block;
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
   color: var(--heder-logo-s-color);
+  margin-right: 93px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 .header-logo-w {
   color: var(--accent-text-color);
@@ -66,32 +80,52 @@ body {
   letter-spacing: 0.02em;
 }
 .header-nav-link {
+  display: inline-block;
   color: var(--text-title-color);
+  margin-right: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
+
 .header-nav-link-b,
 .header-contakt-mailto-b {
+  display: inline-block;
   color: var(--accent-text-color);
+  margin-right: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
+
 .header-contakt-tel {
+  display: inline-block;
   color: #757575;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .heading {
   background: #2f303a;
+  text-align: center;
 }
+
 .heading-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   color: #ffffff;
+  padding: 200px 0px 280px 452px;
+  margin-bottom: 30px;
 }
 .heading-button {
+  display: inline-block;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
   color: #ffffff;
   background-color: #2196f3;
+  padding: 10px 32px;
+  border-radius: 4px;
 }
 /*---------------main--------------------*/
 .main-feature-title {
@@ -101,6 +135,15 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-title-color);
+}
+.main-feature-ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+.main-feature-ul > .main-feature-li {
+  flex-basis: calc(100% / 4 -30px);
+  margin-left: 30px;
 }
 .pre-text {
   font-size: 14px;
@@ -195,4 +238,5 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  align-items: center;
 }
