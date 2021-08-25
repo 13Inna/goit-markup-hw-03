@@ -10,6 +10,8 @@
 }
 
 body {
+  margin: 0;
+
   background-color: #ffffff;
   color: #757575;
   font-family: Roboto;
@@ -33,10 +35,12 @@ body {
 .pre-pre-nav:hover,
 .pre-pre-nav:focus {
   color: var(--accent-background-color-button);
+  cursor: pointer;
 }
 .pre-button:hover,
 .pre-button:focus {
   background-color: var(--accent-background-color-button);
+  color: var(--text-color-white);
   cursor: pointer;
 }
 .pre-nav:hover,
@@ -47,7 +51,6 @@ body {
 /*-------------header-----------*/
 .header {
   border-bottom: 1px solid #ececec;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .header .container {
@@ -102,23 +105,16 @@ body {
   color: var(--text-title-color);
 }
 
-.header-nav-link-b,
-.header-contakt-mailto-b {
-  display: inline-block;
+.header-contakt-mailto {
   margin-right: 50px;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  color: var(--accent-text-color);
 }
-
-.header-contakt-tel {
+.header-contakt-tel,
+.header-contakt-mailto {
   display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
 
   color: #757575;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .heading {
@@ -131,12 +127,13 @@ body {
 }
 
 .heading-title {
-  margin-bottom: 30px;
+  margin: 0 auto 30px auto;
+  max-width: 650px;
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  color: #ffffff;
+  color: var(--text-color-white);
 }
 
 .heading-button {
@@ -147,7 +144,7 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  color: #ffffff;
+  color: var(--text-color-white);
   background-color: #2196f3;
 }
 
@@ -181,6 +178,13 @@ body {
 .main-box-ul > .main-box-li {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: var(--margin-left-section-main);
+}
+.main-team {
+  background-color: #f5f4fa;
+}
+
+.main-team-li {
+  background-color: var(--text-color-white);
 }
 .main-team-ul {
   display: flex;
@@ -245,7 +249,7 @@ img {
   line-height: 1.19;
   color: var(--text-color-white);
   padding-top: 60px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .footer-logo-w {
   color: var(--accent-text-color);
@@ -274,15 +278,6 @@ img {
   padding-bottom: 32px;
 
   color: var(--text-title-color);
-}
-
-.portfolio-header-nav-link-b {
-  display: inline-block;
-  margin-right: 50px;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  color: var(--accent-text-color);
 }
 
 .portfolio-header-contakt-mailto,
@@ -314,9 +309,11 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  border: none;
 }
 .portfolio-button-b {
   display: inline-block;
+  padding: 6px 22px;
   margin-right: 8px;
   margin-bottom: 50px;
   border-radius: 4px;
@@ -326,6 +323,7 @@ img {
 }
 .portfolio-button {
   display: inline-block;
+  padding: 6px 22px;
   margin-right: 8px;
   margin-bottom: 50px;
 
@@ -334,6 +332,7 @@ img {
   border-radius: 4px;
 }
 /*-----------Main--------------*/
+
 .main-projects-ul {
   display: flex;
   flex-wrap: wrap;
@@ -342,22 +341,22 @@ img {
 .main-projects-li {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: var(--margin-left-section-main);
-  border-bottom: 1px solid drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.projects-img {
+.projects-border {
+  border: 1px solid #eeeeee;
   margin-bottom: 20px;
 }
-
 .main-project-ul-title {
-  margin-bottom: 4px;
+  margin: 20px 24px 4px 24px;
   text-align: left;
+
   font-size: 18px;
   line-height: 2;
 }
 
 .main-project-text {
-  margin-bottom: 20px;
+  margin: 0px 24px 20px 24px;
   text-align: left;
 
   font-size: 16px;
